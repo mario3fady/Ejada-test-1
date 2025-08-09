@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexcent Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Nexcent</div>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbarMenu">
+      <!-- simple hamburger -->
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar-menu" id="navbarMenu">
+      <a href="#">Home</a>
+      <a href="#">Feature</a>
+      <a href="#">Community</a>
+      <a href="#">Blog</a>
+      <a href="#">Pricing</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="#" class="custom-button">
+        Register Now <span class="arrow">→</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Lessons and insights <br><span>from 8 years</span></h1>
+      <p>Where to grow your business as a photographer: site or social media?</p>
+      <a href="#" class="btn">Register</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/learning-bro.png" alt="Person learning illustration" />
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <h2>Our Clients</h2>
+    <p>We have been working with some Fortune 500+ clients</p>
+    <div class="logos">
+      <div class="logo-tile"><img src="assets/logos/client-wingmark.jpeg"  alt="Wingmark" /></div>
+      <div class="logo-tile"><img src="assets/logos/client-sunburst.png"   alt="Sunburst" /></div>
+      <div class="logo-tile"><img src="assets/logos/client-red-x.png"    alt="Red X" /></div>
+      <div class="logo-tile is-dark"><img src="assets/logos/client-swoosh.png"   alt="Swoosh" /></div>
+      <div class="logo-tile"><img src="assets/logos/client-triloop.png"    alt="Tri-Loop" /></div>
+      <div class="logo-tile"><img src="assets/logos/client GIT.png"    alt="Red X" /></div>
+      <div class="logo-tile is-dark"><img src="assets/logos/client1.jpeg"   alt="Swoosh" /></div>
+      <div class="logo-tile"><img src="assets/logos/Client3.png"    alt="Tri-Loop" /></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>Manage your entire community in a single system</h2>
+    <p>Who is Nextcent suitable for?</p>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/money-plant.jpg" alt="Money plant" />
+        <h3>Membership Organisations</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments.</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/money-people-pack.jpg" alt="People with money" />
+        <h3>National Associations</h3>
+        <p>Automate onboarding, renewals, and member communications at scale.</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/cash-coins-3d.jpg" alt="Cash and coins" />
+        <h3>Clubs & Groups</h3>
+        <p>Simple tools for events, payments, and community growth.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blog preview -->
+  <section class="blog">
+    <h2>Caring is the new marketing</h2>
+    <p>The Nexcent blog is the best place to read about membership insights.</p>
+    <div class="blog-grid">
+      <article class="post">
+        <img src="assets/learning-pana.png" alt="Learning illustration">
+        <h3>Creating Streamlined Safeguarding Processes</h3>
+        <a href="#" class="readmore">Readmore </a>
+      </article>
+      <article class="post">
+        <img src="assets/questions-rafiki.png" alt="Questions illustration">
+        <h3>What are your safeguarding responsibilities?</h3>
+        <a href="#" class="readmore">Readmore </a>
+      </article>
+      <article class="post">
+        <img src="assets/learning-bro.png" alt="Learning illustration">
+        <h3>Revamping the Membership Model</h3>
+        <a href="#" class="readmore">Readmore </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Pellentesque suscipit fringilla libero eu.</h2>
+    <a href="#" class="btn">Get a Demo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Nexcent ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const burger = document.querySelector('.hamburger');
+    const menu = document.getElementById('navbarMenu');
+    burger.addEventListener('click', () => {
+      const open = menu.classList.toggle('active');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>
